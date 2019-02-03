@@ -131,7 +131,7 @@
         <button class="btn btn-outline-danger my-2 my-sm-0" onclick="location.href = 'logout.php';">Log Out</button>
       </div>
     </nav>
-    <h1 class="text-center mt-4 mb-3" style="color: white">&lt;<span style=" color:#fefefe; text-shadow: 0 0 10px #212121;">CSE</span>&gt; Week View</h1>
+    <h1 class="text-center mt-4 mb-3" style="color: white">&lt;<span style=" color:#fefefe; text-shadow: 0 0 10px #212121;"><?php echo $cstaffdept;?></span>&gt; Week View</h1>
     <div class="table-responsive-sm m-xs-0 m-sm-0 m-md-0 m-lg-4 rounded">          
       <table class="table table-hover table-striped" border="1px">
         <thead class="thead-dark justify-contents-center text-center">
@@ -235,7 +235,7 @@
                     $flag = 2; //used to skip holidays
                     break;                            
                   default:
-                      continue;              
+                                    
                 }
                 if($flag == 2)  //skipping all holidays
                 {

@@ -129,9 +129,22 @@
 		      		<div class="d-flex justify-content-center">
 					  <button type="submit" class="btn btn-outline-danger btn-block mb-2 mt-3" style="border-radius: 25px;">Unbook</button>  
 					</div>
-		      	</form>	      			      	
+		      	</form>	   
+						<?php
+							if($_SESSION['spl'] == 1)
+							{	   			      	
+						?>
 				<div class="d-flex justify-content-center">
-					  <button class="btn btn-success btn-block mb-2 mt-1" onclick="location.href='dash.php'" style="color: white; border-radius: 25px;">Back</button>  
+						<button class="btn btn-success btn-block mb-2 mt-1" onclick="location.href='dashsep.php'" style="color: white; border-radius: 25px;">Back</button>  
+						<?php
+							}
+							else 
+							{
+						?>
+						<button class="btn btn-success btn-block mb-2 mt-1" onclick="location.href='dash.php'" style="color: white; border-radius: 25px;">Back</button> 
+						<?php
+							}
+						?>
 				</div>
 			<?php
             	}
@@ -142,9 +155,22 @@
                     	<strong>Apologies!</strong>It is not permitted to modify lapsed time slots.
                   	</div>
                   	<hr>
-                  	<h4 class="card-title text-center mt-3">Please try booking or unbooking future slots</h4>
+                  	<h4 class="card-title text-center mt-3">Please try booking or unbooking future slots</h4>										
                   	<div class="text-center">
-                  		<button class="btn btn-outline-primary mt-2" onclick="location.href = 'dash.php';">Go Back</button>	
+										<?php
+											if($_SESSION['spl'] == 1)
+												{			   			      	
+										?>
+                  		<button class="btn btn-outline-primary mt-2" onclick="location.href = 'dashsep.php';">Go Back</button>	
+										<?php
+												}
+												else
+												{
+										?>
+											<button class="btn btn-outline-primary mt-2" onclick="location.href = 'dash.php';">Go Back</button>
+										<?php
+												}
+										?>
                   	</div>                
             <?php
             	}

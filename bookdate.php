@@ -112,6 +112,12 @@
     }
     else
     {
+		$staffname = $_SESSION['cstaffname'];
+		$staffemail = $_SESSION['cstaffemail']; 
+		$url = 'https://shbmailserver.000webhostapp.com/?msname='.urlencode($staffname).'&msdate='.urlencode($dateofbooking).'&msdept='.urlencode($deptofbooking).'&msperiod='.urlencode($periodofbooking).'&msemail='.urlencode($staffemail).'&msdo='.urlencode($doofbooking).'&mssubcode='.urlencode($subcodeforbooking);
+		// echo $url;
+		$response = file_get_contents($url);
+
     	if($_SESSION['spltob'] == 0)
     	{
     		$sql = "UPDATE `booking` SET `$periodofbooking` = '$cstaffid', `$subcodemarker` = '$subcodeforbooking' WHERE `DOE` = '$dateofbooking' AND `dept` = '$deptofbooking'" ;
@@ -139,11 +145,11 @@
 			$result = $conn->query($sql) or die("bookdate.php - 142");
 		}
 		if($_SESSION['spl'] == 1)
-		{
+		{			
 			Redirect('dashsep.php', false);
 		}
 		else
-		{
+		{			
 			Redirect('dash.php', false);
 		}	
     }

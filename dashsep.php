@@ -231,7 +231,7 @@
                     $flag = 2; //used to skip holidays
                     break;                            
                   default:
-                      continue;              
+                                   
                 }
                 if($flag == 2)  //skipping all holidays
                 {
