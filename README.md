@@ -2,6 +2,11 @@
 
 A php driven web app to facilitate and digitize the seminar hall booking process in Saranathan College of Engineering, Tamil Nadu, India.
 
+The project started as my first ever officially useful software developed , and is now being used by almost 200-300 staff members to book seminar halls across the Saranathan college campus.
+
+The application is written in PHP since it was the easiest stack to learn along with HTML and CSS and Bootstrap framework to build a complete system with an interactive UI as well as a responsive backend.
+
+This code is now legacy as the college IT staff have taken over the responsibility of maintaining and updating the system and have built in more features along the way
 
 ## Getting Started
 
@@ -9,10 +14,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Everything you need to install the system onto your device before cloning the repository
 
 ```
-Give examples
+[Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 ```
 
 ### Installing
