@@ -1,4 +1,4 @@
-# ✔️💻🔥 Seminar Hall Booking
+# Seminar Hall Booking ✔️💻🔥
 
 A php driven web app to facilitate and digitize the seminar hall booking process in Saranathan College of Engineering, Tamil Nadu, India.
 
