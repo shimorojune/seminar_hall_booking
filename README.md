@@ -17,78 +17,55 @@ These instructions will get you a copy of the project up and running on your loc
 Everything you need to install the system onto your device before cloning the repository
 
 ```
-[XAMPP](https://www.apachefriends.org/download.html) - The PHP development environment used
-[VSCode / Any Editor of your choice]
+XAMPP (https://www.apachefriends.org/download.html) - The PHP development environment used
+VSCode / Any Editor of your choice
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+A step by step series of instructions that tell you how to get a development env running
 
-Say what the step will be
+Open cmd or git prompt in /htdocs in XAMPP folder
 
+Clone the repository
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+git clone
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+Navigate to the new directory created, in your preferred editor
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Boot up XAMPP, and activate
+```
+Apache Server
+MySQL Database Server
+```
+
+Open up your browser and type
+```
+http://localhost/seminar_hall_booking/
+```
+The project will have been deployed
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [PHP](https://www.php.net) - The web development scripting language used
+* [Bootstrap](https://getbootstrap.com) - Front-End component library.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+I am sorry. This project is not open for contribution.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Rohit Raj** - *Complete development* - [RohitRajP](https://github.com/RohitRajP)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* A big thanks to Page Rank algorithm at Google, amazing devs who dare to ask the silly questions and those who answer it in StackOverflow, and my college staff and CS HOD for assistance during and after development.
+* This application was initiated and overlooked by Ms. N Kavitha CSE Dept, Saranathan College and is the reason this system was even developed 
